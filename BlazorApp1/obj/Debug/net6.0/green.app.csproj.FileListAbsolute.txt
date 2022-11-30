@@ -1,0 +1,9 @@
+C:\Users\crist\source\repos\Greenlive.app\BlazorApp1\obj\Debug\net6.0\green.app.csproj.AssemblyReference.cache
+C:\Users\crist\source\repos\Greenlive.app\BlazorApp1\obj\Debug\net6.0\green.app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\source\repos\Greenlive.app\BlazorApp1\obj\Debug\net6.0\green.app.AssemblyInfoInputs.cache
+C:\Users\crist\source\repos\Greenlive.app\BlazorApp1\obj\Debug\net6.0\green.app.AssemblyInfo.cs
+C:\Users\crist\source\repos\Greenlive.app\BlazorApp1\obj\Debug\net6.0\green.app.csproj.CoreCompileInputs.cache
+C:\Users\crist\source\repos\Greenlive.app\BlazorApp1\obj\Debug\net6.0\green.app.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\crist\source\repos\Greenlive.app\BlazorApp1\obj\Debug\net6.0\green.app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\crist\source\repos\Greenlive.app\BlazorApp1\obj\Debug\net6.0\green.app.RazorAssemblyInfo.cache
+C:\Users\crist\source\repos\Greenlive.app\BlazorApp1\obj\Debug\net6.0\green.app.RazorAssemblyInfo.cs

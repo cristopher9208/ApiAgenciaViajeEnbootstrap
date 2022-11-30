@@ -1,0 +1,507 @@
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1:focus {
+    outline: none;
+}
+
+a, .btn-link {
+    color: #0071c1;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.content {
+    padding-top: 1.1rem;
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.validation-message {
+    color: red;
+}
+
+
+
+.blazor-error-boundary {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJoaWRkZW4iPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDAiPjxyZWN0IHg9IjIzNSIgeT0iNTEiIHdpZHRoPSI1NiIgaGVpZ2h0PSI0OSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzUgLTUxKSI+PHBhdGggZD0iTTI2My41MDYgNTFDMjY0LjcxNyA1MSAyNjUuODEzIDUxLjQ4MzcgMjY2LjYwNiA1Mi4yNjU4TDI2Ny4wNTIgNTIuNzk4NyAyNjcuNTM5IDUzLjYyODMgMjkwLjE4NSA5Mi4xODMxIDI5MC41NDUgOTIuNzk1IDI5MC42NTYgOTIuOTk2QzI5MC44NzcgOTMuNTEzIDI5MSA5NC4wODE1IDI5MSA5NC42NzgyIDI5MSA5Ny4wNjUxIDI4OS4wMzggOTkgMjg2LjYxNyA5OUwyNDAuMzgzIDk5QzIzNy45NjMgOTkgMjM2IDk3LjA2NTEgMjM2IDk0LjY3ODIgMjM2IDk0LjM3OTkgMjM2LjAzMSA5NC4wODg2IDIzNi4wODkgOTMuODA3MkwyMzYuMzM4IDkzLjAxNjIgMjM2Ljg1OCA5Mi4xMzE0IDI1OS40NzMgNTMuNjI5NCAyNTkuOTYxIDUyLjc5ODUgMjYwLjQwNyA1Mi4yNjU4QzI2MS4yIDUxLjQ4MzcgMjYyLjI5NiA1MSAyNjMuNTA2IDUxWk0yNjMuNTg2IDY2LjAxODNDMjYwLjczNyA2Ni4wMTgzIDI1OS4zMTMgNjcuMTI0NSAyNTkuMzEzIDY5LjMzNyAyNTkuMzEzIDY5LjYxMDIgMjU5LjMzMiA2OS44NjA4IDI1OS4zNzEgNzAuMDg4N0wyNjEuNzk1IDg0LjAxNjEgMjY1LjM4IDg0LjAxNjEgMjY3LjgyMSA2OS43NDc1QzI2Ny44NiA2OS43MzA5IDI2Ny44NzkgNjkuNTg3NyAyNjcuODc5IDY5LjMxNzkgMjY3Ljg3OSA2Ny4xMTgyIDI2Ni40NDggNjYuMDE4MyAyNjMuNTg2IDY2LjAxODNaTTI2My41NzYgODYuMDU0N0MyNjEuMDQ5IDg2LjA1NDcgMjU5Ljc4NiA4Ny4zMDA1IDI1OS43ODYgODkuNzkyMSAyNTkuNzg2IDkyLjI4MzcgMjYxLjA0OSA5My41Mjk1IDI2My41NzYgOTMuNTI5NSAyNjYuMTE2IDkzLjUyOTUgMjY3LjM4NyA5Mi4yODM3IDI2Ny4zODcgODkuNzkyMSAyNjcuMzg3IDg3LjMwMDUgMjY2LjExNiA4Ni4wNTQ3IDI2My41NzYgODYuMDU0N1oiIGZpbGw9IiNGRkU1MDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=) no-repeat 1rem/1.8rem, #b32121;
+    padding: 1rem 1rem 1rem 3.7rem;
+    color: white;
+}
+
+    .blazor-error-boundary::after {
+        content: "An error has occurred."
+    }
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(87, 166, 57);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 166, 57);
+}
+
+    button:hover {
+        background-color: rgb(87, 166, 57);
+    }
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245,245,245);
+}
+
+    header .logo {
+        background-image: url("media/logo2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 150px;
+        width: 300px;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: left;
+        text-align: right;
+        padding-bottom: 25px;
+    }
+
+    header a {
+        padding: 10px 10px;
+        font-size: large;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgba(87, 166, 57);
+    }
+
+        header a:hover {
+            color: blue;
+        }
+
+#registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2) ),url("media/rafting2.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*planes */
+#Nuestros-planes {
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 134, 24);
+}
+
+    #Nuestros-planes .container {
+        text-align: center;
+    }
+
+#Nuestros-planes {
+    margin-top: 0;
+}
+
+    #Nuestros-planes p {
+        display: none;
+    }
+
+    #Nuestros-planes .carta {
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 40px;
+        border-radius: 15px;
+    }
+
+.carta:first-child {
+    background-image: url("media/aventurero.png");
+}
+
+.carta:nth-child(2) {
+    background-image: url("media/adrenalina.png");
+}
+
+.carta:nth-child(3) {
+    background-image: url("media/extrema.png");
+}
+
+.carta:nth-child(4) {
+    background-image: url("media/amigos.png");
+}
+/*actividades*/
+#Nuestras-actividades {
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 134, 24);
+}
+
+    #Nuestras-actividades .container {
+        text-align: center;
+    }
+
+#Nuestras-actividades {
+    margin-top: 10;
+}
+
+    #Nuestras-actividades p {
+        display: none;
+        background-position: center center;
+    }
+
+    #Nuestras-actividades .carta2 {
+        background-size: cover;
+        padding: 10px;
+        margin: 4px;
+        border-radius: 15px;
+    }
+
+.carta2:first-child {
+    background-image: url("media/cajaAgua.png");
+}
+
+.carta2:nth-child(2) {
+    background-image: url("media/canyoning.png");
+}
+
+.carta2:nth-child(3) {
+    background-image: url("media/rafting.jpg");
+}
+
+.carta2:nth-child(4) {
+    background-image: url("media/motilona.png");
+}
+
+.carta2:nth-child(5) {
+    background-image: url("media/cityTour.png");
+}
+/*estilizacion para web*/
+
+@media(min-width:720px) {
+
+    header {
+
+        width: 100%;
+    }
+
+        header .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header nav {
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+
+    /*nuestros planes para web*/
+
+    #Nuestros-planes .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Nuestros-planes p {
+        display: block;
+        margin-bottom: 0px;
+        color: white;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        margin-top: 5%;
+    }
+
+    #Nuestros-planes h3 {
+        margin-top: 0;
+        color: rgb(255, 255, 255);
+    }
+
+    #Nuestros-planes h2 {
+        background-color: rgb(7, 134, 24);
+        text-align: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        margin-top: 5%;
+        color: rgb(255, 255, 255);
+    }
+}
+
+#Nuestros-planes .carta {
+    padding: 60px;
+    background-position-y: rgba(50, 50, 50,0.5);
+    box-shadow: 5px 5px 10 px rgba(0,0,0,0.5);
+}
+
+.carta:first-child {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2) ),url("media/aventurero.png");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("media/adrenalina.png");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("media/extrema.png");
+}
+
+.carta:nth-child(4) {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("media/amigos.png");
+}
+/*conoce sobre greenlive*/
+#somosGreenlive .container {
+    display: flex;
+    justify-content: center;
+}
+
+#somosGreenlive h2 {
+    color: rgb(7, 134, 24);
+    text-align: center;
+}
+
+#somosGreenlive h3 {
+    color: rgb(78, 83, 79);
+    text-align: center;
+}
+
+#somosGreenlive .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somosGreenlive .imagenContainer {
+    background-image: url("media/paicol.png");
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 600px;
+}
+
+/*nuestras actividades para web*/
+#Nuestras-actividades .programas2 {
+    display: flex;
+    justify-content: center;
+}
+
+#Nuestras-actividades p {
+    background-position: center center;
+    display: block;
+    margin-bottom: 0px;
+}
+
+#Nuestras-actividades h2 {
+    background-color: rgb(7, 134, 24);
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: rgb(255, 255, 255);
+}
+
+#Nuestras-actividades h3 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+}
+
+#Nuestras-actividades .carta2 {
+    padding: 60px;
+    background-position-y: rgba(50, 50, 50,0.5);
+    box-shadow: 5px 5px 10 px rgba(0,0,0,0.5);
+}
+
+.carta2:first-child {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("media/cajaAgua.png");
+}
+
+.carta2:nth-child(2) {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("media/canyoning.png");
+}
+
+.carta2:nth-child(3) {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("media/rafting.jpg");
+}
+
+.carta2:nth-child(4) {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("media/motilona.png");
+}
+
+.carta2:nth-child(5) {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("media/cityTour.png");
+}
+/*links Redes sociales*/
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .buttons a {
+        text-decoration: none;
+        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: rgb(7, 134, 24);
+        color: #f1f1f1;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+    }
+
+        .buttons a:hover {
+            transform: scale(1.2);
+        }
+
+footer .siguenos {
+    background-color: rgb(7, 134, 24);
+    text-align: center;
+    color: #f1f1f1;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+footer p {
+    margin-top: 3%;
+}
+
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+    .form-register h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+    .form-register a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}

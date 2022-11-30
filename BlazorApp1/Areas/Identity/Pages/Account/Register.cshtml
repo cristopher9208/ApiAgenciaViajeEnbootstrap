@@ -1,0 +1,59 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4" >
+        
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h2>Registrate y agenda con nosotros.</h2>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <section class="form-register">
+                <h4>Formulario Registro</h4>
+           
+            <div class="form-group">
+                <label for="cedulaCliente" class="form-label mt-4">Numero Cedula</label>
+                <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Ingrese su Cedula"> 
+            </div>
+            <div class="form-group">
+                <label for="nombreCliente" class="form-label mt-4">Nombres y Apellidos</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Ingrese su Nombre">
+            </div>
+            <div class="form-group">
+                <label for="TelefonoCliente" class="form-label mt-4">Numero Celular</label>
+                <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Ingrese su Celular">
+            </div>
+            <div class="form-group">
+                <label for="TelefonoEmergencia" class="form-label mt-4">Numero en caso de Emergencia</label>
+                <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Ingrese Telefono">
+            </div>
+            <div class="form-group">
+                <label for="correoCliente" class="form-label mt-4">Correo Electronico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Ingrese su Email">
+               
+                <div class="form-group">
+                        <label for="InputPassword" class="form-label mt-4">Ingrese una Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese una Contraseña">
+                </div>
+
+        </div>
+            <br />
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-success">Registrar</button>
+            </div>
+                <p><a href="/Identity/Account/Login">¿Ya tengo Cuenta?</a></p>
+            </section>
+
+        </form>
+    </div>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
